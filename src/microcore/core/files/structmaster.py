@@ -1,0 +1,2 @@
+class StructMaster(object):
+    pass

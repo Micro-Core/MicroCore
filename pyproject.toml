@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "MicroCore"
+version = "0.0.1"
+authors = [
+ { name="Usmanov", email="usmnvk.work@gmail.com" },
+]
+description = "Is training for self"
+readme = "README.md"
+requires-python = ">=3.10.0"
+classifiers = [
+   "Programming Language :: Python :: 3",
+   "License :: OSI Approved :: MIT License",
+   "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/Micro-Core/MicroCore"
+Issues = "https://github.com/Micro-Core/MicroCore"
