@@ -2,21 +2,29 @@
 requires = ["hatchling"]
 build-backend = "hatchling.build"
 
+[tool.hatch.build.targets.wheel]
+packages = ["src/microcore"]
+
 [project]
-name = "MicroCore"
-version = "0.0.1"
+name = "micro-core-node"
+version = "0.0.5"
 authors = [
- { name="Usmanov", email="usmnvk.work@gmail.com" },
+    { name = "Usmanov", email = "usmnvk.work@gmail.com" },
 ]
 description = "Is training for self"
 readme = "README.md"
 requires-python = ">=3.10.0"
 classifiers = [
-   "Programming Language :: Python :: 3",
-   "License :: OSI Approved :: MIT License",
-   "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "typer>=0.3.2"
 ]
 
+[project.scripts]
+microcore-cli = "microcore.cli.execute:app"
 [project.urls]
 Homepage = "https://github.com/Micro-Core/MicroCore"
 Issues = "https://github.com/Micro-Core/MicroCore"
